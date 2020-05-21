@@ -54,7 +54,7 @@ namespace Kyanite.API
                 c.RoutePrefix = string.Empty;
             });
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
