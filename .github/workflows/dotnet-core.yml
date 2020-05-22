@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.100
     - name: Project Navigation
-      run: cd Kyanite.API
+      working-directory: ./Kyanite.API
     - name: Install dependencies
       run: dotnet restore
     - name: Build
