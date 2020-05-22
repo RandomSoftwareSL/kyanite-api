@@ -5,6 +5,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  
+defaults:
+  run:
+    working-directory: ./Kyanite.API
 
 jobs:
   build:
@@ -17,8 +21,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
-    - name: Project Navigation
-      working-directory: ./Kyanite.API
     - name: Install dependencies
       run: dotnet restore
     - name: Build
