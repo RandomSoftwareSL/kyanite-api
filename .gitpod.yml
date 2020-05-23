@@ -1,7 +1,7 @@
 image: gitpod/workspace-dotnet
 
 tasks:
-  - command : cd cd Kyanite.API/ && dotnet run
+  - command : cd Kyanite.API/ && dotnet run
   
 ports:
   - port: 5000
